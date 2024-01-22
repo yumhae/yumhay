@@ -1,0 +1,201 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Add any additional stylesheets or scripts here -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #111; /* Baguhin ang background color */
+            color: #fff;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+ 
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Additional styles for sections */
+        .section {
+            display: none;
+            text-align: center;
+            padding: 500px 0; /* Binawasan ko ang padding para hindi masyadong mataas */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        .text-box {
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            margin: 40px;
+            background-color: rgba(0, 0, 0, 0.8); /* Baguhin ang opacity ng background color */
+            border-radius: 20px; /* Rounded border */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Box shadow para sa konting depth */
+        }
+
+        #background-section {
+            background-image: url('https://i.pinimg.com/originals/e6/ba/0a/e6ba0a0e1a76e2fad592076f37bc50a3.jpg');
+        }
+
+        #about {
+            background-image: url('https://i.redd.it/uz5kuid4ot6b1.png');
+        }
+
+        #features {
+            background-image: url('https://i.redd.it/uz5kuid4ot6b1.png');
+        }
+
+        #cta {
+            background-image: url('https://i.redd.it/uz5kuid4ot6b1.png');
+        }
+
+        #contact {
+            background-image: url('https://i.redd.it/uz5kuid4ot6b1.png');
+        }
+
+        .background-container {
+            max-width: 120px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            padding: 10px 0;
+        }
+
+        #about,
+        #features,
+        #cta,
+        #contact {
+            display: none;
+        }
+
+        .feature {
+            margin-bottom: 50px;
+        }
+
+        footer {
+            padding: 50px 0;
+            text-align: center;
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="https://preview.redd.it/mzi32poefa491.jpg?width=1440&format=pjpg&auto=webp&s=76a0f6fa89ea3083e08599c4b7ba5a74e2b8fcc6" alt="Your Logo">
+        </div>
+        <ul>
+            <li><a onclick="showSection('background-section')">Home</a></li>
+            <li><a onclick="showSection('about')">About</a></li>
+            <li><a onclick="showSection('features')">Features</a></li>
+            <li><a onclick="showSection('cta')">Get Started</a></li>
+            <li><a onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sections -->
+    <div id="background-section" class="section">
+        <div class="background-container">
+            <h2>WELCOME!</h2>
+            <h2>One Piece Collectibles</h2>
+            <p></p>
+        </div>
+    </div>
+
+    <div id="about" class="section">
+        <h2>About Us</h2>
+        <div class="text-box">
+            <p>At Exclusive One Piece Collectibles, we are passionate about bringing the rarest and most sought-after One Piece products directly to you. Our dedicated team works tirelessly to source limited edition photo cards and elusive figures, ensuring that our customers have access to an exclusive collection that enhances their love for the iconic anime and manga series.</p>
+        </div>
+    </div>
+
+    <div id="features" class="section">
+        <h2>Featured Collections</h2>
+        <div class="text-box">
+            <p>Explore our carefully curated collections, each telling a unique story from the One Piece universe.</p>
+            <p>1. Curated Selection: Explore a carefully curated collection of limited edition photo cards and rare One Piece figures, ensuring that every item in our inventory is unique and highly sought after by collectors.</p>
+            <p>2. Rare and Limited Editions: Discover exclusive items that are hard to find elsewhere on the internet. We specialize in sourcing products that go beyond the ordinary, providing you with the opportunity to own rare and limited edition One Piece memorabilia.</p>
+            <p>3. Authenticity Guarantee: Shop with confidence knowing that each limited edition photo card and figure undergoes thorough inspection to guarantee authenticity and quality. Our commitment to delivering genuine products ensures a valuable addition to your collection.</p>
+            <p>4. Secure Online Shopping: Enjoy a secure and seamless online shopping experience on our user-friendly website. Our platform is designed to make your purchasing process hassle-free and safeguarded, allowing you to shop with peace of mind.</p>
+            <p>5. Passionate Community: Connect with fellow One Piece enthusiasts in our vibrant community. Stay updated on the latest additions to our collection, share your insights, and participate in engaging discussions about your favorite series.</p>
+        </div>
+    </div>
+
+    <div id="cta" class="section">
+        <h2>Getting Started with Exclusive One Piece Collectibles:</h2>
+        <div class="text-box">
+            <p>Join our community and start building your own exclusive One Piece collection.</p>
+            <p>Welcome to Exclusive One Piece Collectibles! If you're ready to embark on a journey to enhance your One Piece collection with rare and exclusive items, follow these simple steps to get started:</p>
+            <p>1. Explore Our Collection: Visit our website www.exclusiveonepiececollectibles.com to browse our curated collection of limited edition photo cards and hard-to-find One Piece figures. Take your time to explore the unique offerings that await you.</p>
+            <p>2. Create an Account: To make your shopping experience seamless, consider creating a personal account on our website. This allows you to track your orders, manage your wishlist, and stay updated on the latest additions to our collection.</p>
+            <p>3. Browse Categories: Navigate through our user-friendly categories to find the specific limited edition photo cards or figures you're interested in. Whether you're a fan of iconic moments captured on cards or seeking elusive characters in figure form, we have something special for every collector.</p>
+            <p>4. Select Your Favorites: Once you've found items that captivate your interest, add them to your cart. Don't hesitate to explore our exclusive and rare offerings to make your collection truly stand out.</p>
+            <p>5. Secure Checkout: When you're ready to make a purchase, proceed to the secure checkout. Enter your shipping details and select your preferred payment method. Rest assured, our checkout process is designed to ensure the security of your transactions.</p>
+            <p>6. Contact Us for Assistance: If you have any questions, encounter any issues, or simply need assistance, our customer support team is here to help. Reach out to us via email at support@exclusiveonepiececollectibles.com or by phone at [Your Contact Number].</p>
+            <p>7. Stay Connected: Join our passionate community by following us on social media. Stay updated on new arrivals, engage in discussions with fellow enthusiasts, and be the first to know about exclusive offers.</p>
+            <p>8. Enjoy Your Exclusive One Piece Collectibles: Once your order is placed, anticipate the arrival of your unique One Piece treasures. We aim to deliver an exceptional experience, and we hope our collectibles bring joy and excitement to your collection.</p>
+            <p>Thank you for choosing Exclusive One Piece Collectibles. Start your journey today, and let the adventure of collecting rare and exclusive One Piece items begin!</p>
+        </div>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contact Us</h2>
+        <div class="text-box">
+            <p>Have questions or need assistance? We're here to help! Feel free to reach out to our dedicated customer support team using the following contact information:</p>
+            <p>Email: support@exclusiveonepiececollectibles.com</p>
+            <p>Phone: 09994918761</p>
+            <p>Address: Ayala Mall</p>
+            <p>Our customer support team is available during business hours to address your inquiries, assist with orders, and provide any information you may need. Your satisfaction is our priority, and we're here to ensure your experience with Exclusive One Piece Collectibles is nothing short of exceptional.</p>
+            <p>Thank you for choosing Exclusive One Piece Collectibles – where passion meets exclusivity in the world of One Piece collectibles!</p>
+        </div>
+    </div>
+
+    <!-- Script for showing and hiding sections -->
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            var sections = document.getElementsByClassName('section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+      
